@@ -6,6 +6,7 @@ Vagrant.configure("2") do |config|
   # Con esto le indicamos a Vagrant ue vaya al directorio de "cajas" (boxes) que contiene su Atlas e instale un
   # Ubuntu 64 bits mediante el gestor de maquinas virtuales VirtualBox
   # El directorio completo de boxes se puede ver en la siguiente URL atlas.hashicorp.com/boxes/search
+  # configuracion para OSX + Parallels
   config.vm.box =  "bento/ubuntu-18.04"
   config.vm.box_version = "201912.04.0"
   # Redirecciono puertos desde la maquina virtual a la maquina real. Por ejemplo 
@@ -46,7 +47,7 @@ Vagrant.configure("2") do |config|
 
   # Provider-specific configuration so you can fine-tune various
   # backing providers for Vagrant. These expose provider-specific options.
-  # Example for VirtualBox:
+  # Example for Parallels:
   #
   config.vm.provider "parallels" do |vb|
   #   # Display the VirtualBox GUI when booting the machine
