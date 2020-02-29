@@ -26,7 +26,7 @@ fi
 # ruta raíz del servidor web
 APACHE_ROOT="/var/www"
 # ruta de la aplicación
-APP_PATH="$APACHE_ROOT/utn-devops-practica"
+APP_PATH="$APACHE_ROOT/utn-devops-app"
 
 
 ## configuración servidor web
@@ -48,8 +48,9 @@ fi
 if [ ! -d "$APP_PATH" ]; then
 	echo "clono el repositorio"
 	cd $APACHE_ROOT
-	sudo git clone https://github.com/Fichen/utn-devops-app.git
-	cd $APP_PATH
-	sudo git checkout unidad-1-vagrant
-fi
+#	sudo git clone https://github.com/Mesihas/utn-devops-app.git
+  sudo git clone https://github.com/Fichen/utn-devops-app.git
 
+	cd $APP_PATH
+	sudo git checkout master
+fi
