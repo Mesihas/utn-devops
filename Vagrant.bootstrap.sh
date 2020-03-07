@@ -41,7 +41,11 @@ if [ -f "/tmp/devops.site.conf" ]; then
 	#refresco el servicio del servidor web para que tome la nueva configuración
 	sudo service apache2 reload
 fi
-	
+
+cd /
+cd var
+sudo mkdir www
+
 ## aplicación
 
 # descargo la app del repositorio
